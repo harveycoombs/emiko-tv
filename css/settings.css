@@ -1,0 +1,78 @@
+.settings-header, .settings-section {
+    display: block;
+    width: 100%;
+}
+
+.settings-header, .settings-section-tabs {
+    margin-bottom: 24px;
+}
+
+.settings-header {
+    text-align: center;
+}
+
+.sub-section h3 {
+    color: var(--alt-text-color);
+}
+
+.individual-login-record i {
+    font-size: 3em;
+}
+
+.individual-login-record {
+    color: var(--alt-text-color);
+    padding: 12px 0;
+    border-bottom: var(--border);
+}
+
+#login_history_area .individual-login-record:last-child {
+    border-bottom: none;
+}
+
+.individual-login-record .login-record-detail .title {
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+.individual-login-record .login-record-detail {
+    margin-left: 12px;
+}
+
+.account-avatar {
+    box-shadow: 0 0 0 1px var(--primary-color);
+    margin: 0 auto 12px auto;
+}
+
+.account-avatar img {
+    width: 90px;
+    height: 90px;
+}
+
+.individual-setting, .settings-buttons {
+    margin-top: 12px;
+}
+
+.inline-settings > .individual-setting {
+    width: 49%;
+}
+
+.inline-settings > .individual-setting:last-child {
+    margin-left: 2%;
+}
+
+.individual-setting .setting-value > * {
+    width: 100%;
+}
+
+.individual-setting .setting-title {
+    font-size: .9em;
+    margin-bottom: 4px;
+}
+
+.account-creation-date {
+    color: var(--alt-text-color);
+}
+
+.notice {
+    margin: 12px 0;
+}

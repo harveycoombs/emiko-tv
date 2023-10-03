@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="emiko.tv | {{username}}" />
+        <meta property="og:description" content="User" />
+        <meta property="og:url" content="http://emiko.tv/users/{{username}}" />
+        <meta property="og:image" content="http://emiko.tv{{avatar_url}}" />
+        <meta name="theme-color" content="#788BFF" />
+
+        <link rel="stylesheet" type="text/css" href="/css/shared.css" />
+        <link rel="stylesheet" type="text/css" href="/css/profile.css" />
+
+        <link rel="icon" type="image/png" href="/assets/branding/favicon.png" />
+
+        <title>{{username}} | emiko.tv</title>
+    </head>
+
+    <body>
+        {{header}}<main class="global-container">
+            <section class="profile-header">
+                <div class="avatar profile-avatar"><img src="{{avatar_url}}" alt="{{username}}" draggable="false" /></div>
+            </section><section class="profile-content-area">
+                <div>
+                    <div class="profile-identity-area no-select">
+                        <div class="profile-username inline-items"><span>@{{username}}</span>{{flare}}</div><div class="profile-karma">{{karma}} karma</div>
+                    </div>
+
+                    <div class="profile-header-content sb-flexbox">
+                        <div class="tab-menu profile-section-tabs no-select"><div class="tab section-tab current" data-section="details">About</div><div class="tab section-tab" data-section="videos">Videos<span class="tab-counter" id="user_videos_counter">0</span></div><div class="tab section-tab" data-section="comments">Comments <span class="tab-counter" id="user_comments_counter">0</span></div></div>
+                        <div class="profile-options">
+                            <div class="option-icon profile-option" data-action="follow"><i class="fa-solid fa-plus"></i></div>
+                            <div class="option-icon profile-option" data-action="block"><i class="fa-solid fa-ban"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section" data-section="details">
+                    <div>
+                        <h2 class="section-title">About {{username}}</h2>
+                        <div class="even-flexbox">
+                            <div class="profile-details">
+                                <div class="inline-items">{{gender}}</div>
+                                <div class="inline-items"><i class="fa-solid fa-location-dot"></i> <span>{{location}}</span></div>
+                                <div class="inline-items"><i class="fa-solid fa-calendar-days"></i> <span id="profile_creation_date">{{created}}</span></div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="section-title">{{username}}'s recent activity</h2>
+                    </div>
+                </div>
+
+                <div class="profile-section hidden" data-section="videos">
+                    <div>
+                        <h2 class="section-title">Videos uploaded by {{username}}</h2>
+                        <div id="profile_videos_area" class="posts-grid"></div>
+                    </div>
+                </div><div class="profile-section hidden" data-section="comments">
+                    <div>
+                        <h2 class="section-title">Comments posted by {{username}}</h2>
+                        <div id="profile_comments_area" data-offset="0"></div>
+                    </div>
+                </div>
+            </section>
+        </main>{{footer}}<script src="/js/profile.js" type="module" defer></script>
+        <input type="hidden" id="user_id" value="{{user_id}}" />
+    </body>
+</html>

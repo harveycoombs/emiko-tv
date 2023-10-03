@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="/css/shared.css" />
+        <link rel="stylesheet" type="text/css" href="/css/register.css" />
+
+        <link rel="icon" type="image/png" href="/assets/branding/favicon.png" />
+
+        <title>Log in | Emiko.TV</title>
+    </head>
+
+    <body>
+        <main class="global-container">
+            <section>
+                <h1>emiko.tv</h1>
+                <div class="inline-items login-options no-select"><a href="/login" class="login-option" id="login_btn">Log in</a><a href="/register" class="login-option active" id="register_btn">Register</a></div>
+                <div class="panel outer-registration-area even-flexbox">
+                    <div class="internal-reg-section">
+                        <input type="text" class="field" id="username_in" placeholder="Username" />
+                        <input type="text" class="field" id="email_in" placeholder="Email Address" />
+                        <select class="field" id="location_in"><option selected disabled>Location</option></select>
+                        <select class="field" id="gender_in"><option selected disabled>Gender</option><option value="1">Male</option><option value="2">Female</option><option value="3">Unknown</option></select>
+                    </div><div class="internal-reg-section">
+                        <input type="password" class="field" id="password_in" placeholder="Password" />
+                        <input type="password" class="field" id="password_confirmation_in" placeholder="Confirm Password" />
+                        <hr/>
+                        <button class="button" id="submit_registration_btn" disabled><i class="fa-solid fa-angles-right"></i> Register</button>
+                    </div>
+                </div>
+            </section>
+        </main>{{footer}}<script src="/js/register.js" type="module" defer></script>
+    </body>
+</html>

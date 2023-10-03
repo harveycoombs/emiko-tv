@@ -1,0 +1,115 @@
+@import url('posts.css');
+
+.profile-header {
+    position: relative;
+    height: 120px;
+    border-bottom: var(--border);
+}
+
+.panel {
+    margin-bottom: 12px;
+}
+
+.profile-header .profile-avatar img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-header .profile-avatar {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: -53px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--background-color);
+}
+
+.profile-identity-area {
+    margin: 60px auto 12px auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.profile-identity-area > * {
+    display: block;
+    width: fit-content;
+    line-height: .9em;
+    margin: auto;
+}
+
+.profile-username {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 2px auto 6px auto;
+}
+
+
+.profile-section-tabs {
+    width: fit-content;
+}
+
+.profile-header .profile-header-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.profile-section h2.section-title {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: var(--border);
+}
+
+.profile-details > div {
+    margin-bottom: 12px;
+}
+
+.profile-details > div i {
+    color: var(--alt-text-color);
+    margin-right: 4px;
+}
+
+.profile-karma {
+    font-size: .8em;
+    padding: 3px 6px;
+    width: fit-content;
+    border-radius: 4px;
+    background-color: var(--alt-text-color);
+    color: #878993;
+}
+
+.expanded-media {
+    position: relative;
+}
+
+.profile-details {
+    font-size: .95em;
+}
+
+.post-deletion-confirmation .highlighted {
+    padding: 4px;
+    border-radius: 4px;
+    font-size: .95em;
+    line-height: .9em;
+    background-color: var(--background-color);
+}
+
+.post-deletion-confirmation strong {
+    font-size: 1.4em;
+}
+
+.profile-options .profile-option {
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+}
+
+.profile-section {
+    margin-top: 12px;
+}

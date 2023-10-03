@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="/css/shared.css" />
+        <link rel="stylesheet" type="text/css" href="/css/login.css" />
+
+        <link rel="icon" type="image/png" href="/assets/branding/favicon.png" />
+
+        <title>Log in | Emiko.TV</title>
+    </head>
+
+    <body>
+        <main class="global-container">
+            <section>
+                <h1>emiko.tv</h1>
+                <div class="inline-items login-options no-select"><a href="/login" class="login-option active" id="login_btn">Log in</a><a href="/register" class="login-option" id="register_btn">Register</a></div>
+                <div class="outer-login-panel">
+                    <input type="text" class="field" placeholder="Username/Email Address" id="username_or_email_in" /><input type="password" class="field" placeholder="Password" id="password_in" /><hr/><button class="button" id="submit_login_attempt_btn"><i class="fa-solid fa-right-to-bracket"></i> Log in</button>
+                </div>
+            </section>
+        </main>{{footer}}<script src="/js/login.js" type="module" defer></script>
+    </body>
+</html>

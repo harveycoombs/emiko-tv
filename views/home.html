@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/css/shared.css" />
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
+
+    <link rel="icon" type="image/png" href="/assets/branding/favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="emiko.tv" />
+    <meta property="og:description" content="A simple yet feature-rich video sharing platform" />
+    <meta property="og:url" content="http://emiko.tv/" />
+    <meta name="theme-color" content="#788BFF" />
+
+    <title>emiko.tv</title>
+</head>
+
+<body>
+    {{header}}<main>
+        <section class="hero-section no-select">
+            <div>
+                <h1>emiko.tv</h1>
+                <div class="supporting-title-text">Share your videos with the world easily and effectively.</div>
+                <div class="hero-options-area">
+                    <div class="inline-items search-area"><input type="text" class="field" placeholder='"Cute cats"' id="hero_search_field" />
+                    <button class="button" id="init_search_btn"><i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> Search</button></div><div class="app-download-options even-flexbox">
+                        <a href="/" class="button app-download-btn inline-items"><i class="fa-brands fa-apple"></i><span><div class="app-dl-title">Download</div><div class="app-dl-name">App Store</div></span></a>
+                        <a href="/" class="button app-download-btn inline-items"><i class="fa-brands fa-google-play"></i><span><div class="app-dl-title">Download</div><div class="app-dl-name">Play Store</div></span></a>
+                    </div>
+                </div>
+            </div>
+        </section><section class="global-container">
+            <div class="sb-flexbox"><h2 class="section-title"><i class="fa-solid fa-film"></i> Featured Videos</h2><div class="featured-tags-list">{{popular_tags}}</div></div>
+            <div id="feed" data-offset="0"></div>
+        </section><section>
+            <h2 class="section-title"><i class="fa-solid fa-users"></i> Featured Users</h2>
+            <div id="users"></div>
+        </section>
+    </main>{{footer}}
+    <script src="/js/home.js" type="module" defer></script>
+</body>
+
+</html>

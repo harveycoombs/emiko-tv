@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="/css/shared.css" />
+        <link rel="stylesheet" type="text/css" href="/css/settings.css" />
+
+        <link rel="icon" type="image/png" href="/assets/branding/favicon.png" />
+
+        <title>Settings | Emiko.TV</title>
+    </head>
+
+    <body>
+        {{header}}<main class="global-container">
+            <section class="settings-header">
+                <div class="avatar account-avatar"><img src="" id="account_avatar" alt="" draggable="false" /><input type="file" id="avatar_uploader" class="hidden" /></div>
+                <h2>Account Settings</h2>
+            </section><section class="tab-menu settings-section-tabs">
+                <div class="tab settings-tab current" data-tab="details">Details</div>
+                <div class="tab settings-tab" data-tab="security">Security</div>
+                <div class="tab settings-tab" data-tab="advanced">Advanced</div>
+            </section><section class="settings-sections">
+                <div class="settings-section" data-name="details">
+                    <div class="account-creation-date">Joined <span id="account_creation_date"></span></div>
+                    <div class="individual-setting"><div class="setting-title">Username</div><div class="setting-value"><input type="text" id="account_username" class="field" placeholder="username123" data-original="" /></div></div>
+                    <div class="inline-items inline-settings"><div class="individual-setting"><div class="setting-title">Email</div><div class="setting-value"><input type="text" id="account_email" class="field" placeholder="name@example.com" data-original="" /></div></div><div class="individual-setting"><div class="setting-title">Phone Number</div><div class="setting-value"><input type="text" id="account_phone" class="field" placeholder="+0123456789" data-original="" /></div></div></div><div class="inline-items inline-settings"></div><div class="individual-setting"><div class="setting-title">Location</div><div class="setting-value"><select id="account_location" class="field"><option selected disabled>Location</option></select></div></div><div class="individual-setting"><div class="setting-title">Gender</div><div class="setting-value"><select id="account_gender" class="field" data-original=""><option value="1">Male</option><option value="2">Female</option><option value="3">Unknown</option></select></div></div>
+                    <div class="even-flexbox settings-buttons"><button class="button" id="update_details_btn"><i class="fa-solid fa-floppy-disk"></i> Save Changes</button><button class="button alt" id="reset_changes_btn"><i class="fa-solid fa-rotate-left"></i> Undo Changes</button></div>
+                </div>
+                <div class="settings-section hidden" data-name="security">
+                    <div class="individual-setting"><div class="setting-title">Current Password</div><div class="setting-value"><input type="password" id="current_password" class="field" /></div></div>
+                    <div class="individual-setting"><div class="setting-title">New Password</div><div class="setting-value"><input type="password" id="new_password" class="field" /></div></div>
+                    <div class="individual-setting"><div class="setting-title">Confirm New Password</div><div class="setting-value"><input type="password" id="confirm_new_password" class="field" /></div></div>
+                    <div class="even-flexbox settings-buttons"><button class="button" id="change_password_btn"><i class="fa-solid fa-key"></i> Change Password</button><button class="button alt" id="forgot_password_btn"><i class="fa-solid fa-question"></i> Forgot Password</button></div>
+                    <h3>Recent Activity</h3>
+                    <div id="login_history_area" class="no-select"></div>
+                </div><div class="settings-section hidden" data-name="advanced">
+                    <span>Advanced settings (coming soon)</span>
+                </div>
+            </section>
+        </main>{{footer}}<script src="/js/settings.js" type="module" defer></script>
+    </body>
+</html>

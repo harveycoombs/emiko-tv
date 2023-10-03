@@ -1,0 +1,184 @@
+@import url('posts.css');
+
+:root {
+    --hero-text-color: #5C6169;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .internal-header-content {
+    padding: 0 12px;
+}
+
+main > section {
+    margin-bottom: 12px;
+}
+
+main .hero-section {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 0 0 10px 10px;
+    padding: 12px;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.hero-section h1 {
+    font-size: 4em;
+    line-height: .9em;
+}
+
+.hero-section h1 + .supporting-title-text {
+    font-size: .95em;
+    margin: 12px 0 16px 0;
+}
+
+.hero-section .field {
+    border-color: var(--hero-text-color);
+    color: var(--background-color);
+}
+
+.hero-section .field::placeholder, header .header-options .header-option {
+    color: var(--hero-text-color);
+}
+
+header .header-options .header-option:hover {
+    background-color: #303339;
+}
+
+section .section-title {
+    color: var(--alt-text-color);
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+section .section-title i {
+    color: var(--primary-color);
+}
+
+#feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+}
+
+#users {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+    grid-gap: 1rem;
+}
+
+#users .featured-user {
+    background-color: var(--border-color);
+    padding: 0 12px 12px 0;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    text-decoration: none;
+    cursor: pointer;
+    color: #81808D;
+}
+
+#users .featured-user .user-avatar {
+    border-radius: 10px 0;
+    width: calc(50% + 6px);
+    height: calc(50% + 6px);
+    display: block;
+}
+
+.featured-user .user-name {
+    font-size: 1.05em;
+    margin: 8px 0 0 8px;
+    display: block;
+    line-height: .9em;
+}
+
+.user-karma {
+    font-size: .8em;
+    line-height: .9em;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--alt-text-color);
+    width: fit-content;
+    display: block;
+    margin: 8px;
+}
+
+#users .featured-user {
+    position: relative;
+}
+
+#users .featured-user::after {
+    content: '\f35d';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    position: absolute;
+    font-size: 1.8em;
+    opacity: 0.5;
+    top: 12px;
+    right: 12px;
+}
+
+#logout_btn {
+    color: #FF576C;
+}
+
+.app-download-options {
+    width: 100%;
+}
+
+.app-download-btn {
+    background-color: var(--hero-text-color);
+    border-color: var(--hero-text-color);
+    margin-top: 8px;
+} .app-download-btn:hover {
+    background-color: #40454C;
+    border-color: #40454C;
+}
+
+.app-download-btn > span {
+    text-align: left;
+    margin-left: 8px;
+}
+
+.app-download-btn > i {
+    font-size: 1.8em;
+}
+
+.app-download-btn .app-dl-title {
+    font-size: 1.2em;
+    line-height: .9em;
+}
+
+.app-download-btn .app-dl-name {
+    color: #979DA8;
+    font-size: .8em;
+}
+
+.hero-options-area .search-area {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+#hero_search_field {
+    width: 75%;
+}
+
+#init_search_btn {
+    width: 25%;
+}
+
+.featured-tags-list {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+}
